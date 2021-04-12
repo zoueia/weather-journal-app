@@ -26,17 +26,17 @@ Sde note: I made the class 'nowDate' to process the raw data from 'Date' to pres
 
 ## app.js file
 I added an EventListener to button when clicked:
-1- It makes sure that the data was entered. If not, then,
-2- It will alert the user to enter data.
-3- It uses the entered data then passes it to the getWeatherData() function.
+- It makes sure that the data was entered. If not, then,
+- It will alert the user to enter data.
+- It uses the entered data then passes it to the getWeatherData() function.
 
 The getWeatherData() is an async function that does the following:
-1-Fetches data from weather API using fetch() function and the entered data.
-2-Passes the fetched weather data to the postWeatherData() function. 
+-Fetches data from weather API using fetch() function and the entered data.
+-Passes the fetched weather data to the postWeatherData() function. 
 
 The postWeatherData() is an async function that does the following:
-1- It calls for a post request.
-2- Recieves the response and checks if the entered zipcode is correct. If not,
-3- Alerts the user to enter the correct zipcode.
-4- Turns the response into json.
-5- Displays the formatted response in the UI.
+- It calls for a post request.
+- Recieves the response and checks if the entered zipcode is correct. If not,
+- Alerts the user to enter the correct zipcode.
+- Turns the response into json.
+- Displays the formatted response in the UI.
